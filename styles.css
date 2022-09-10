@@ -2,6 +2,60 @@
   background-color: lightblue;
 }
 
-.gallery-container {
+/* space equally using flexbox for gallery-class
+ */
+
+
+.gallery-item-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  padding: 3%;
+  width: auto;
+  height: auto;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+
+.gallery-button-containter {
+  display: flex;
+  justify-content: center;
+}
+
+
+.gallery-fruit-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.fruit {
+    background: chartreuse;
+    border: black;
+    width: auto;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-button {
+    background-color: indianred;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
